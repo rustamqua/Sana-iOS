@@ -1,0 +1,2355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A75841B6567FE6AF9B19DC7 /* GetTableUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A758387C1B7F065A381260D /* GetTableUseCase.swift */; };
+		9A7585DBF79CEC2A8040C13D /* SelectCategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A75889DA854E817B9B7EA2C /* SelectCategoryPresenter.swift */; };
+		9A7587261D015CA6824E7AED /* Date+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A758844F67BEDF02DB4B1BA /* Date+Formatted.swift */; };
+		9A75875C8B1C8D3ABD09F21D /* SelectCategoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A758C35B4F7944F5AAA7EA3 /* SelectCategoryInteractor.swift */; };
+		9A758EDB6AE5E0226F71281D /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A758DF55E78B89F813A3D68 /* AnalyticsViewController.swift */; };
+		9C25B7DA286049FD00EF4C54 /* PersistantFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C25B7D9286049FD00EF4C54 /* PersistantFacade.swift */; };
+		9C5277C528616F14008FF827 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 9C5277C428616F14008FF827 /* SwiftUICharts */; };
+		9C6911B3285F71E700A842C2 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C6911B1285F71E700A842C2 /* Model.xcdatamodeld */; };
+		9C6911B4285F71E700A842C2 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C6911B1285F71E700A842C2 /* Model.xcdatamodeld */; };
+		9C89AB772861700100017F43 /* AnalyticsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C89AB762861700100017F43 /* AnalyticsScreen.swift */; };
+		CE1F7DD42823B0300074BB1E /* GetTablesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DD32823B0300074BB1E /* GetTablesRequest.swift */; };
+		CE1F7DD62823B37B0074BB1E /* PostTableRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DD52823B37B0074BB1E /* PostTableRequest.swift */; };
+		CE1F7DD82823B7320074BB1E /* GetTableByIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DD72823B7320074BB1E /* GetTableByIdRequest.swift */; };
+		CE1F7DDA2823BB240074BB1E /* GetAccountsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DD92823BB240074BB1E /* GetAccountsRequest.swift */; };
+		CE1F7DDC2823CE370074BB1E /* PostAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DDB2823CE370074BB1E /* PostAccountRequest.swift */; };
+		CE1F7DDE2823CEF00074BB1E /* GetCategoriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DDD2823CEF00074BB1E /* GetCategoriesRequest.swift */; };
+		CE1F7DE02823D02F0074BB1E /* PostCategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DDF2823D02F0074BB1E /* PostCategoryRequest.swift */; };
+		CE1F7DE22823D1120074BB1E /* GetTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DE12823D1120074BB1E /* GetTransactionRequest.swift */; };
+		CE1F7DE42823D1A00074BB1E /* PostTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DE32823D1A00074BB1E /* PostTransactionRequest.swift */; };
+		CE1F7DE62823D4C70074BB1E /* FirstTableInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DE52823D4C70074BB1E /* FirstTableInteractor.swift */; };
+		CE1F7DE82823D4CF0074BB1E /* FirstTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DE72823D4CF0074BB1E /* FirstTablePresenter.swift */; };
+		CE1F7DEA282405F30074BB1E /* AnimationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DE9282405F30074BB1E /* AnimationModifier.swift */; };
+		CE1F7DEC28240D770074BB1E /* Double+Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DEB28240D770074BB1E /* Double+Price.swift */; };
+		CE1F7DEE282414690074BB1E /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DED282414690074BB1E /* TransactionCell.swift */; };
+		CE1F7DF2282468510074BB1E /* SelectCategoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DF1282468510074BB1E /* SelectCategoryScreen.swift */; };
+		CE1F7DF42824685F0074BB1E /* SelectCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7DF32824685F0074BB1E /* SelectCategoryViewController.swift */; };
+		CE38331427EB5DBD0083AEF8 /* SecondaryActiveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE38331327EB5DBD0083AEF8 /* SecondaryActiveButton.swift */; };
+		CE38331927EB8E860083AEF8 /* SanaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE38331827EB8E860083AEF8 /* SanaTextField.swift */; };
+		CE3BAB032819CEDB00814AEC /* OTPInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3BAB022819CEDB00814AEC /* OTPInteractor.swift */; };
+		CE3BAB052819CF5700814AEC /* VerifyOTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3BAB042819CF5700814AEC /* VerifyOTPRequest.swift */; };
+		CE3BAB072819D28400814AEC /* OTPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3BAB062819D28400814AEC /* OTPPresenter.swift */; };
+		CE3BAB092819DCE700814AEC /* CreatePasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3BAB082819DCE700814AEC /* CreatePasswordInteractor.swift */; };
+		CE3BAB0B2819DCF100814AEC /* CreatePasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3BAB0A2819DCF100814AEC /* CreatePasswordPresenter.swift */; };
+		CE3BAB0D2819DD0600814AEC /* CreatePasswordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3BAB0C2819DD0600814AEC /* CreatePasswordRequest.swift */; };
+		CE48A67E27EF35BC00EE255E /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48A67D27EF35BC00EE255E /* SignInScreen.swift */; };
+		CE48A68227EF41A400EE255E /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48A68127EF41A400EE255E /* SignUpScreen.swift */; };
+		CE57A494281B241F001CA54D /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57A493281B241F001CA54D /* LoginRequest.swift */; };
+		CE57A496281B24D9001CA54D /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57A495281B24D9001CA54D /* SignInInteractor.swift */; };
+		CE57A498281B24E2001CA54D /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57A497281B24E2001CA54D /* SignInPresenter.swift */; };
+		CE5D47F027D23414006C6EE1 /* SanaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D47EF27D23414006C6EE1 /* SanaApp.swift */; };
+		CE5D47F227D23414006C6EE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D47F127D23414006C6EE1 /* ContentView.swift */; };
+		CE5D47F427D23416006C6EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5D47F327D23416006C6EE1 /* Assets.xcassets */; };
+		CE5D47F727D23416006C6EE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5D47F627D23416006C6EE1 /* Preview Assets.xcassets */; };
+		CE5D480127D23416006C6EE1 /* SanaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D480027D23416006C6EE1 /* SanaTests.swift */; };
+		CE5D480B27D23416006C6EE1 /* SanaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D480A27D23416006C6EE1 /* SanaUITests.swift */; };
+		CE5D480D27D23416006C6EE1 /* SanaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D480C27D23416006C6EE1 /* SanaUITestsLaunchTests.swift */; };
+		CE5D481E27D271A8006C6EE1 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D481D27D271A8006C6EE1 /* Assets.swift */; };
+		CE5D482427D27240006C6EE1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D482127D27240006C6EE1 /* AppState.swift */; };
+		CE5D482F27D275F4006C6EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5D482E27D275F4006C6EE1 /* Assets.xcassets */; };
+		CE5D483527D275F5006C6EE1 /* SanaWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE5D483427D275F5006C6EE1 /* SanaWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE5D483A27D275F5006C6EE1 /* SanaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D483927D275F5006C6EE1 /* SanaApp.swift */; };
+		CE5D483C27D275F5006C6EE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D483B27D275F5006C6EE1 /* ContentView.swift */; };
+		CE5D483E27D275F5006C6EE1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D483D27D275F5006C6EE1 /* NotificationController.swift */; };
+		CE5D484027D275F5006C6EE1 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D483F27D275F5006C6EE1 /* NotificationView.swift */; };
+		CE5D484227D275F5006C6EE1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D484127D275F5006C6EE1 /* ComplicationController.swift */; };
+		CE5D484427D275F6006C6EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5D484327D275F6006C6EE1 /* Assets.xcassets */; };
+		CE5D484727D275F6006C6EE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5D484627D275F6006C6EE1 /* Preview Assets.xcassets */; };
+		CE5D485327D275F6006C6EE1 /* SanaWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D485227D275F6006C6EE1 /* SanaWatchTests.swift */; };
+		CE5D485D27D275F7006C6EE1 /* SanaWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D485C27D275F7006C6EE1 /* SanaWatchUITests.swift */; };
+		CE5D485F27D275F7006C6EE1 /* SanaWatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5D485E27D275F7006C6EE1 /* SanaWatchUITestsLaunchTests.swift */; };
+		CE5D486227D275F7006C6EE1 /* SanaWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CE5D482C27D275F1006C6EE1 /* SanaWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE61EA71280366C500C591E8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61EA6D280366C400C591E8 /* Router.swift */; };
+		CE61EA72280366C500C591E8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61EA6E280366C500C591E8 /* Coordinator.swift */; };
+		CE61EA74280366C500C591E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61EA70280366C500C591E8 /* ViewController.swift */; };
+		CE61EA78280367A900C591E8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61EA77280367A900C591E8 /* AppCoordinator.swift */; };
+		CE61EA7C28036BD800C591E8 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = CE61EA7B28036BD800C591E8 /* Swinject */; };
+		CE61EA7E28036BF700C591E8 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61EA7D28036BF700C591E8 /* DIContainer.swift */; };
+		CE61EA822803705300C591E8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61EA812803705300C591E8 /* SignUpViewController.swift */; };
+		CE61EA85280370CB00C591E8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE61EA84280370CB00C591E8 /* SnapKit */; };
+		CE61EA88280370F000C591E8 /* Add+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61EA87280370F000C591E8 /* Add+ViewController.swift */; };
+		CE61EA8D2803722700C591E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61EA8C2803722700C591E8 /* AppDelegate.swift */; };
+		CE62786C2809856E00EABC3E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62786B2809856E00EABC3E /* SignInViewController.swift */; };
+		CE62786E28098E1B00EABC3E /* Keyboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62786D28098E1B00EABC3E /* Keyboard+Extension.swift */; };
+		CE757E252813CB4200E14E75 /* RestrictedHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE757E242813CB4200E14E75 /* RestrictedHostingController.swift */; };
+		CE757E282813CC7800E14E75 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE757E272813CC7800E14E75 /* FirstTableViewController.swift */; };
+		CE757E2A2813CC8200E14E75 /* FirstTableScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE757E292813CC8200E14E75 /* FirstTableScreen.swift */; };
+		CE82959027E2298000A56979 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE82958F27E2298000A56979 /* Colors.xcassets */; };
+		CE82959227E22D8800A56979 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82959127E22D8800A56979 /* Fonts.swift */; };
+		CE8D250F280F3C640010852F /* CreatePasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D250E280F3C640010852F /* CreatePasswordScreen.swift */; };
+		CE8D2512280F3D960010852F /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2511280F3D960010852F /* PasswordTextField.swift */; };
+		CE8D2515280F3FB00010852F /* KeyboardListeningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2514280F3FB00010852F /* KeyboardListeningViewModel.swift */; };
+		CE8D2517280F41830010852F /* ConditionalNormalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2516280F41830010852F /* ConditionalNormalButton.swift */; };
+		CE8D2519280F4BF10010852F /* CreatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2518280F4BF10010852F /* CreatePasswordViewController.swift */; };
+		CEA181ED27E7D0590043FE37 /* NormalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA181EC27E7D0590043FE37 /* NormalButton.swift */; };
+		CEA181F027E7D3380043FE37 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA181EF27E7D3380043FE37 /* Colors.swift */; };
+		CEA181F227E7D5DF0043FE37 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA181F127E7D5DF0043FE37 /* SecondaryButton.swift */; };
+		CEA181F427E7D6460043FE37 /* DisabledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA181F327E7D6460043FE37 /* DisabledButton.swift */; };
+		CEA181F627E7D6890043FE37 /* ActiveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA181F527E7D6890043FE37 /* ActiveButton.swift */; };
+		CEADCE242822AE600060047A /* AddAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCE232822AE600060047A /* AddAccountPresenter.swift */; };
+		CEADCE262822AE6A0060047A /* AddAccountIteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCE252822AE6A0060047A /* AddAccountIteractor.swift */; };
+		CEADCE282822B3450060047A /* AddAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCE272822B3450060047A /* AddAccountScreen.swift */; };
+		CEADCE2A2822B35B0060047A /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCE292822B35B0060047A /* AddAccountViewController.swift */; };
+		CEADCE2D2822E0550060047A /* AccountDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCE2C2822E0550060047A /* AccountDetailsInteractor.swift */; };
+		CEADCE2F2822E05F0060047A /* AccountDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCE2E2822E05F0060047A /* AccountDetailsPresenter.swift */; };
+		CEADCE312822E0770060047A /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCE302822E0770060047A /* AccountDetailsViewController.swift */; };
+		CEADCE332822E08E0060047A /* AccountDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCE322822E08E0060047A /* AccountDetailsScreen.swift */; };
+		CEADCE382822E2810060047A /* AddTransactionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCE372822E2810060047A /* AddTransactionCoordinator.swift */; };
+		CEADCE3B2822E2C60060047A /* AddTransactionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCE3A2822E2C60060047A /* AddTransactionPresenter.swift */; };
+		CEADCE3D2822E2CE0060047A /* AddTransactionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCE3C2822E2CE0060047A /* AddTransactionInteractor.swift */; };
+		CEADCE3F2822E2DA0060047A /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCE3E2822E2DA0060047A /* AddTransactionViewController.swift */; };
+		CEADCE412822E2EB0060047A /* AddTransactionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEADCE402822E2EB0060047A /* AddTransactionScreen.swift */; };
+		CED006C52818675600DA7C58 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED006C42818675600DA7C58 /* RegisterRequest.swift */; };
+		CED006C72818681E00DA7C58 /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED006C62818681E00DA7C58 /* Encodable+Dictionary.swift */; };
+		CED006C92818694300DA7C58 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED006C82818694300DA7C58 /* SignUpInteractor.swift */; };
+		CED006CB28186F0F00DA7C58 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED006CA28186F0F00DA7C58 /* SignUpPresenter.swift */; };
+		CED006CE28187C9300DA7C58 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = CED006CD28187C9300DA7C58 /* SwiftMessages */; };
+		CED006D128187D2800DA7C58 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED006D028187D2800DA7C58 /* MessageView.swift */; };
+		CEE34F10281307E5003B1D66 /* PushNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE34F0F281307E5003B1D66 /* PushNotificationsViewController.swift */; };
+		CEE34F1428130811003B1D66 /* PushNotificationsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE34F1328130811003B1D66 /* PushNotificationsScreen.swift */; };
+		CEF5807D280C830A00817F05 /* OTPScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5807C280C830A00817F05 /* OTPScreen.swift */; };
+		CEF5807F280C831500817F05 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5807E280C831500817F05 /* OTPViewController.swift */; };
+		CEF58082280C89D400817F05 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = CEF58081280C89D400817F05 /* Introspect */; };
+		CEF60718282198FE0010A6F9 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF60717282198FE0010A6F9 /* HomeCoordinator.swift */; };
+		CEF6071D282199D40010A6F9 /* ServicesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6071C282199D40010A6F9 /* ServicesCoordinator.swift */; };
+		CEF6071F282199F20010A6F9 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6071E282199F20010A6F9 /* SettingsCoordinator.swift */; };
+		CEF6072128219A140010A6F9 /* AnalyticsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6072028219A140010A6F9 /* AnalyticsCoordinator.swift */; };
+		CEF6072828219CBD0010A6F9 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6072728219CBD0010A6F9 /* HomeInteractor.swift */; };
+		CEF6072A28219CC20010A6F9 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6072928219CC20010A6F9 /* HomePresenter.swift */; };
+		CEF6072C28219D490010A6F9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6072B28219D490010A6F9 /* HomeViewController.swift */; };
+		CEF6072E28219D630010A6F9 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6072D28219D630010A6F9 /* HomeScreen.swift */; };
+		CEF6073328219EEA0010A6F9 /* HomeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6073228219EEA0010A6F9 /* HomeNavigationBar.swift */; };
+		CEF9303627ED11B6003EFCB8 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF9302E27ED11B6003EFCB8 /* Networking.framework */; };
+		CEF9303D27ED11B6003EFCB8 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9303C27ED11B6003EFCB8 /* NetworkingTests.swift */; };
+		CEF9303E27ED11B6003EFCB8 /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF9303027ED11B6003EFCB8 /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEF9304127ED11B6003EFCB8 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF9302E27ED11B6003EFCB8 /* Networking.framework */; };
+		CEF9304227ED11B6003EFCB8 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEF9302E27ED11B6003EFCB8 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEF9304C27ED125A003EFCB8 /* CustomStringConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9304B27ED125A003EFCB8 /* CustomStringConvertable.swift */; };
+		CEF9305727ED1B0D003EFCB8 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9305627ED1B0D003EFCB8 /* Request.swift */; };
+		CEF9305927ED1C3D003EFCB8 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9305827ED1C3D003EFCB8 /* NetworkDispatcher.swift */; };
+		CEF9305B27ED1C62003EFCB8 /* NetworkRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9305A27ED1C62003EFCB8 /* NetworkRequestError.swift */; };
+		CEF9305D27ED1D02003EFCB8 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9305C27ED1D02003EFCB8 /* ApiClient.swift */; };
+		CEF9306027ED96BE003EFCB8 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9305F27ED96BE003EFCB8 /* WelcomeScreen.swift */; };
+		CEFA6142280430A800319C7A /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA6141280430A800319C7A /* AuthCoordinator.swift */; };
+		CEFA614628043B9500319C7A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA614528043B9500319C7A /* WelcomeViewController.swift */; };
+		CEFBA484280DDAB900E0A680 /* Array+safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBA483280DDAB900E0A680 /* Array+safe.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE5D47FD27D23416006C6EE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5D47E427D23414006C6EE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE5D47EB27D23414006C6EE1;
+			remoteInfo = Sana;
+		};
+		CE5D480727D23416006C6EE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5D47E427D23414006C6EE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE5D47EB27D23414006C6EE1;
+			remoteInfo = Sana;
+		};
+		CE5D483627D275F5006C6EE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5D47E427D23414006C6EE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE5D483327D275F5006C6EE1;
+			remoteInfo = "SanaWatch WatchKit Extension";
+		};
+		CE5D484F27D275F6006C6EE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5D47E427D23414006C6EE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE5D483327D275F5006C6EE1;
+			remoteInfo = "SanaWatch WatchKit Extension";
+		};
+		CE5D485927D275F7006C6EE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5D47E427D23414006C6EE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE5D482B27D275F1006C6EE1;
+			remoteInfo = SanaWatch;
+		};
+		CE5D486027D275F7006C6EE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5D47E427D23414006C6EE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE5D482B27D275F1006C6EE1;
+			remoteInfo = SanaWatch;
+		};
+		CEF9303727ED11B6003EFCB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5D47E427D23414006C6EE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEF9302D27ED11B6003EFCB8;
+			remoteInfo = Networking;
+		};
+		CEF9303927ED11B6003EFCB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5D47E427D23414006C6EE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE5D47EB27D23414006C6EE1;
+			remoteInfo = Sana;
+		};
+		CEF9303F27ED11B6003EFCB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5D47E427D23414006C6EE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEF9302D27ED11B6003EFCB8;
+			remoteInfo = Networking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE5D486627D275F7006C6EE1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CE5D483527D275F5006C6EE1 /* SanaWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D486A27D275F7006C6EE1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CE5D486227D275F7006C6EE1 /* SanaWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF9302527ED1122003EFCB8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CEF9304227ED11B6003EFCB8 /* Networking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9A758387C1B7F065A381260D /* GetTableUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTableUseCase.swift; sourceTree = "<group>"; };
+		9A758844F67BEDF02DB4B1BA /* Date+Formatted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Formatted.swift"; sourceTree = "<group>"; };
+		9A75889DA854E817B9B7EA2C /* SelectCategoryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategoryPresenter.swift; sourceTree = "<group>"; };
+		9A758C35B4F7944F5AAA7EA3 /* SelectCategoryInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategoryInteractor.swift; sourceTree = "<group>"; };
+		9A758DF55E78B89F813A3D68 /* AnalyticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
+		9C25B7D9286049FD00EF4C54 /* PersistantFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistantFacade.swift; sourceTree = "<group>"; };
+		9C6911B2285F71E700A842C2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		9C89AB762861700100017F43 /* AnalyticsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsScreen.swift; sourceTree = "<group>"; };
+		CE1F7DD32823B0300074BB1E /* GetTablesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTablesRequest.swift; sourceTree = "<group>"; };
+		CE1F7DD52823B37B0074BB1E /* PostTableRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableRequest.swift; sourceTree = "<group>"; };
+		CE1F7DD72823B7320074BB1E /* GetTableByIdRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTableByIdRequest.swift; sourceTree = "<group>"; };
+		CE1F7DD92823BB240074BB1E /* GetAccountsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAccountsRequest.swift; sourceTree = "<group>"; };
+		CE1F7DDB2823CE370074BB1E /* PostAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAccountRequest.swift; sourceTree = "<group>"; };
+		CE1F7DDD2823CEF00074BB1E /* GetCategoriesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCategoriesRequest.swift; sourceTree = "<group>"; };
+		CE1F7DDF2823D02F0074BB1E /* PostCategoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCategoryRequest.swift; sourceTree = "<group>"; };
+		CE1F7DE12823D1120074BB1E /* GetTransactionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTransactionRequest.swift; sourceTree = "<group>"; };
+		CE1F7DE32823D1A00074BB1E /* PostTransactionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTransactionRequest.swift; sourceTree = "<group>"; };
+		CE1F7DE52823D4C70074BB1E /* FirstTableInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableInteractor.swift; sourceTree = "<group>"; };
+		CE1F7DE72823D4CF0074BB1E /* FirstTablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTablePresenter.swift; sourceTree = "<group>"; };
+		CE1F7DE9282405F30074BB1E /* AnimationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModifier.swift; sourceTree = "<group>"; };
+		CE1F7DEB28240D770074BB1E /* Double+Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Price.swift"; sourceTree = "<group>"; };
+		CE1F7DED282414690074BB1E /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		CE1F7DF1282468510074BB1E /* SelectCategoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryScreen.swift; sourceTree = "<group>"; };
+		CE1F7DF32824685F0074BB1E /* SelectCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryViewController.swift; sourceTree = "<group>"; };
+		CE38331327EB5DBD0083AEF8 /* SecondaryActiveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryActiveButton.swift; sourceTree = "<group>"; };
+		CE38331827EB8E860083AEF8 /* SanaTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanaTextField.swift; sourceTree = "<group>"; };
+		CE3BAB022819CEDB00814AEC /* OTPInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPInteractor.swift; sourceTree = "<group>"; };
+		CE3BAB042819CF5700814AEC /* VerifyOTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOTPRequest.swift; sourceTree = "<group>"; };
+		CE3BAB062819D28400814AEC /* OTPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPPresenter.swift; sourceTree = "<group>"; };
+		CE3BAB082819DCE700814AEC /* CreatePasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordInteractor.swift; sourceTree = "<group>"; };
+		CE3BAB0A2819DCF100814AEC /* CreatePasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordPresenter.swift; sourceTree = "<group>"; };
+		CE3BAB0C2819DD0600814AEC /* CreatePasswordRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordRequest.swift; sourceTree = "<group>"; };
+		CE48A67D27EF35BC00EE255E /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		CE48A68127EF41A400EE255E /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		CE57A493281B241F001CA54D /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		CE57A495281B24D9001CA54D /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		CE57A497281B24E2001CA54D /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		CE5D47EC27D23414006C6EE1 /* Sana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5D47EF27D23414006C6EE1 /* SanaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanaApp.swift; sourceTree = "<group>"; };
+		CE5D47F127D23414006C6EE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE5D47F327D23416006C6EE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE5D47F627D23416006C6EE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE5D47FC27D23416006C6EE1 /* SanaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5D480027D23416006C6EE1 /* SanaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanaTests.swift; sourceTree = "<group>"; };
+		CE5D480627D23416006C6EE1 /* SanaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5D480A27D23416006C6EE1 /* SanaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanaUITests.swift; sourceTree = "<group>"; };
+		CE5D480C27D23416006C6EE1 /* SanaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE5D481D27D271A8006C6EE1 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		CE5D482127D27240006C6EE1 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		CE5D482C27D275F1006C6EE1 /* SanaWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanaWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5D482E27D275F4006C6EE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE5D483427D275F5006C6EE1 /* SanaWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SanaWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5D483927D275F5006C6EE1 /* SanaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanaApp.swift; sourceTree = "<group>"; };
+		CE5D483B27D275F5006C6EE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE5D483D27D275F5006C6EE1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CE5D483F27D275F5006C6EE1 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		CE5D484127D275F5006C6EE1 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		CE5D484327D275F6006C6EE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE5D484627D275F6006C6EE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE5D484827D275F6006C6EE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5D484927D275F6006C6EE1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CE5D484E27D275F6006C6EE1 /* SanaWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanaWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5D485227D275F6006C6EE1 /* SanaWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanaWatchTests.swift; sourceTree = "<group>"; };
+		CE5D485827D275F7006C6EE1 /* SanaWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanaWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5D485C27D275F7006C6EE1 /* SanaWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanaWatchUITests.swift; sourceTree = "<group>"; };
+		CE5D485E27D275F7006C6EE1 /* SanaWatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanaWatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE61EA6D280366C400C591E8 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		CE61EA6E280366C500C591E8 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CE61EA70280366C500C591E8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE61EA77280367A900C591E8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CE61EA7D28036BF700C591E8 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		CE61EA812803705300C591E8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CE61EA87280370F000C591E8 /* Add+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add+ViewController.swift"; sourceTree = "<group>"; };
+		CE61EA8C2803722700C591E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE62786B2809856E00EABC3E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CE62786D28098E1B00EABC3E /* Keyboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyboard+Extension.swift"; sourceTree = "<group>"; };
+		CE757E242813CB4200E14E75 /* RestrictedHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictedHostingController.swift; sourceTree = "<group>"; };
+		CE757E272813CC7800E14E75 /* FirstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
+		CE757E292813CC8200E14E75 /* FirstTableScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableScreen.swift; sourceTree = "<group>"; };
+		CE82958F27E2298000A56979 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CE82959127E22D8800A56979 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		CE8D250E280F3C640010852F /* CreatePasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordScreen.swift; sourceTree = "<group>"; };
+		CE8D2511280F3D960010852F /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		CE8D2514280F3FB00010852F /* KeyboardListeningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardListeningViewModel.swift; sourceTree = "<group>"; };
+		CE8D2516280F41830010852F /* ConditionalNormalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalNormalButton.swift; sourceTree = "<group>"; };
+		CE8D2518280F4BF10010852F /* CreatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewController.swift; sourceTree = "<group>"; };
+		CEA181EC27E7D0590043FE37 /* NormalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalButton.swift; sourceTree = "<group>"; };
+		CEA181EF27E7D3380043FE37 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CEA181F127E7D5DF0043FE37 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		CEA181F327E7D6460043FE37 /* DisabledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisabledButton.swift; sourceTree = "<group>"; };
+		CEA181F527E7D6890043FE37 /* ActiveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveButton.swift; sourceTree = "<group>"; };
+		CEADCE232822AE600060047A /* AddAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountPresenter.swift; sourceTree = "<group>"; };
+		CEADCE252822AE6A0060047A /* AddAccountIteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountIteractor.swift; sourceTree = "<group>"; };
+		CEADCE272822B3450060047A /* AddAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountScreen.swift; sourceTree = "<group>"; };
+		CEADCE292822B35B0060047A /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
+		CEADCE2C2822E0550060047A /* AccountDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsInteractor.swift; sourceTree = "<group>"; };
+		CEADCE2E2822E05F0060047A /* AccountDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsPresenter.swift; sourceTree = "<group>"; };
+		CEADCE302822E0770060047A /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
+		CEADCE322822E08E0060047A /* AccountDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsScreen.swift; sourceTree = "<group>"; };
+		CEADCE372822E2810060047A /* AddTransactionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionCoordinator.swift; sourceTree = "<group>"; };
+		CEADCE3A2822E2C60060047A /* AddTransactionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionPresenter.swift; sourceTree = "<group>"; };
+		CEADCE3C2822E2CE0060047A /* AddTransactionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionInteractor.swift; sourceTree = "<group>"; };
+		CEADCE3E2822E2DA0060047A /* AddTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
+		CEADCE402822E2EB0060047A /* AddTransactionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionScreen.swift; sourceTree = "<group>"; };
+		CED006C42818675600DA7C58 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		CED006C62818681E00DA7C58 /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
+		CED006C82818694300DA7C58 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		CED006CA28186F0F00DA7C58 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		CED006D028187D2800DA7C58 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		CED094612817269600FD014C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CEE34F0F281307E5003B1D66 /* PushNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsViewController.swift; sourceTree = "<group>"; };
+		CEE34F1328130811003B1D66 /* PushNotificationsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsScreen.swift; sourceTree = "<group>"; };
+		CEF5807C280C830A00817F05 /* OTPScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPScreen.swift; sourceTree = "<group>"; };
+		CEF5807E280C831500817F05 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		CEF60717282198FE0010A6F9 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		CEF6071C282199D40010A6F9 /* ServicesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCoordinator.swift; sourceTree = "<group>"; };
+		CEF6071E282199F20010A6F9 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		CEF6072028219A140010A6F9 /* AnalyticsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsCoordinator.swift; sourceTree = "<group>"; };
+		CEF6072728219CBD0010A6F9 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		CEF6072928219CC20010A6F9 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		CEF6072B28219D490010A6F9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CEF6072D28219D630010A6F9 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		CEF6073228219EEA0010A6F9 /* HomeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationBar.swift; sourceTree = "<group>"; };
+		CEF9302E27ED11B6003EFCB8 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF9303027ED11B6003EFCB8 /* Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
+		CEF9303527ED11B6003EFCB8 /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF9303C27ED11B6003EFCB8 /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		CEF9304B27ED125A003EFCB8 /* CustomStringConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStringConvertable.swift; sourceTree = "<group>"; };
+		CEF9305627ED1B0D003EFCB8 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		CEF9305827ED1C3D003EFCB8 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		CEF9305A27ED1C62003EFCB8 /* NetworkRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestError.swift; sourceTree = "<group>"; };
+		CEF9305C27ED1D02003EFCB8 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		CEF9305F27ED96BE003EFCB8 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		CEFA6141280430A800319C7A /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		CEFA614528043B9500319C7A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		CEFBA483280DDAB900E0A680 /* Array+safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+safe.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE5D47E927D23414006C6EE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE61EA85280370CB00C591E8 /* SnapKit in Frameworks */,
+				CEF58082280C89D400817F05 /* Introspect in Frameworks */,
+				CEF9304127ED11B6003EFCB8 /* Networking.framework in Frameworks */,
+				9C5277C528616F14008FF827 /* SwiftUICharts in Frameworks */,
+				CE61EA7C28036BD800C591E8 /* Swinject in Frameworks */,
+				CED006CE28187C9300DA7C58 /* SwiftMessages in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D47F927D23416006C6EE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D480327D23416006C6EE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D483127D275F5006C6EE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D484B27D275F6006C6EE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D485527D275F7006C6EE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF9302B27ED11B6003EFCB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF9303227ED11B6003EFCB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF9303627ED11B6003EFCB8 /* Networking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A7586D2CE31F79D02EB262C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				9A758387C1B7F065A381260D /* GetTableUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		9C6911B0285F71B300A842C2 /* Persistancy */ = {
+			isa = PBXGroup;
+			children = (
+				9C6911B1285F71E700A842C2 /* Model.xcdatamodeld */,
+				9C25B7D9286049FD00EF4C54 /* PersistantFacade.swift */,
+			);
+			path = Persistancy;
+			sourceTree = "<group>";
+		};
+		CE1F7DD22823B01A0074BB1E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE1F7DD32823B0300074BB1E /* GetTablesRequest.swift */,
+				CE1F7DD52823B37B0074BB1E /* PostTableRequest.swift */,
+				CE1F7DD72823B7320074BB1E /* GetTableByIdRequest.swift */,
+				CE1F7DD92823BB240074BB1E /* GetAccountsRequest.swift */,
+				CE1F7DDB2823CE370074BB1E /* PostAccountRequest.swift */,
+				CE1F7DDD2823CEF00074BB1E /* GetCategoriesRequest.swift */,
+				CE1F7DDF2823D02F0074BB1E /* PostCategoryRequest.swift */,
+				CE1F7DE12823D1120074BB1E /* GetTransactionRequest.swift */,
+				CE1F7DE32823D1A00074BB1E /* PostTransactionRequest.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CE1F7DEF28241F340074BB1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE1F7DF0282468240074BB1E /* SelectCategory */ = {
+			isa = PBXGroup;
+			children = (
+				CE1F7DF1282468510074BB1E /* SelectCategoryScreen.swift */,
+				CE1F7DF32824685F0074BB1E /* SelectCategoryViewController.swift */,
+				9A758C35B4F7944F5AAA7EA3 /* SelectCategoryInteractor.swift */,
+				9A75889DA854E817B9B7EA2C /* SelectCategoryPresenter.swift */,
+			);
+			path = SelectCategory;
+			sourceTree = "<group>";
+		};
+		CE38331527EB8AF60083AEF8 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				CE38331827EB8E860083AEF8 /* SanaTextField.swift */,
+				CE8D2511280F3D960010852F /* PasswordTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		CE5D47E327D23414006C6EE1 = {
+			isa = PBXGroup;
+			children = (
+				CE5D47EE27D23414006C6EE1 /* Sana */,
+				CE5D47FF27D23416006C6EE1 /* SanaTests */,
+				CE5D480927D23416006C6EE1 /* SanaUITests */,
+				CE5D482D27D275F1006C6EE1 /* SanaWatch */,
+				CE5D483827D275F5006C6EE1 /* SanaWatch WatchKit Extension */,
+				CE5D485127D275F6006C6EE1 /* SanaWatchTests */,
+				CE5D485B27D275F7006C6EE1 /* SanaWatchUITests */,
+				CEF9302F27ED11B6003EFCB8 /* Networking */,
+				CEF9303B27ED11B6003EFCB8 /* NetworkingTests */,
+				CE5D47ED27D23414006C6EE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE5D47ED27D23414006C6EE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D47EC27D23414006C6EE1 /* Sana.app */,
+				CE5D47FC27D23416006C6EE1 /* SanaTests.xctest */,
+				CE5D480627D23416006C6EE1 /* SanaUITests.xctest */,
+				CE5D482C27D275F1006C6EE1 /* SanaWatch.app */,
+				CE5D483427D275F5006C6EE1 /* SanaWatch WatchKit Extension.appex */,
+				CE5D484E27D275F6006C6EE1 /* SanaWatchTests.xctest */,
+				CE5D485827D275F7006C6EE1 /* SanaWatchUITests.xctest */,
+				CEF9302E27ED11B6003EFCB8 /* Networking.framework */,
+				CEF9303527ED11B6003EFCB8 /* NetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE5D47EE27D23414006C6EE1 /* Sana */ = {
+			isa = PBXGroup;
+			children = (
+				CED094612817269600FD014C /* Info.plist */,
+				CE61EA6B2803661700C591E8 /* Core */,
+				CE61EA752803679100C591E8 /* Flows */,
+				CE5D481A27D2717D006C6EE1 /* Generated */,
+				9C6911B0285F71B300A842C2 /* Persistancy */,
+				CE5D47F527D23416006C6EE1 /* Preview Content */,
+				CE5D481927D27035006C6EE1 /* Resources */,
+				CE5D482927D27331006C6EE1 /* UI */,
+				9A7586D2CE31F79D02EB262C /* UseCases */,
+			);
+			path = Sana;
+			sourceTree = "<group>";
+		};
+		CE5D47F527D23416006C6EE1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D47F627D23416006C6EE1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE5D47FF27D23416006C6EE1 /* SanaTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D480027D23416006C6EE1 /* SanaTests.swift */,
+			);
+			path = SanaTests;
+			sourceTree = "<group>";
+		};
+		CE5D480927D23416006C6EE1 /* SanaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D480A27D23416006C6EE1 /* SanaUITests.swift */,
+				CE5D480C27D23416006C6EE1 /* SanaUITestsLaunchTests.swift */,
+			);
+			path = SanaUITests;
+			sourceTree = "<group>";
+		};
+		CE5D481927D27035006C6EE1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D47F327D23416006C6EE1 /* Assets.xcassets */,
+				CE82958F27E2298000A56979 /* Colors.xcassets */,
+				CE82959127E22D8800A56979 /* Fonts.swift */,
+				CEA181EF27E7D3380043FE37 /* Colors.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE5D481A27D2717D006C6EE1 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D481D27D271A8006C6EE1 /* Assets.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		CE5D481F27D27223006C6EE1 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CE61EA7D28036BF700C591E8 /* DIContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		CE5D482927D27331006C6EE1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CEA181EB27E7D0390043FE37 /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CE5D482D27D275F1006C6EE1 /* SanaWatch */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D482E27D275F4006C6EE1 /* Assets.xcassets */,
+			);
+			path = SanaWatch;
+			sourceTree = "<group>";
+		};
+		CE5D483827D275F5006C6EE1 /* SanaWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D483927D275F5006C6EE1 /* SanaApp.swift */,
+				CE5D483B27D275F5006C6EE1 /* ContentView.swift */,
+				CE5D483D27D275F5006C6EE1 /* NotificationController.swift */,
+				CE5D483F27D275F5006C6EE1 /* NotificationView.swift */,
+				CE5D484127D275F5006C6EE1 /* ComplicationController.swift */,
+				CE5D484327D275F6006C6EE1 /* Assets.xcassets */,
+				CE5D484827D275F6006C6EE1 /* Info.plist */,
+				CE5D484927D275F6006C6EE1 /* PushNotificationPayload.apns */,
+				CE5D484527D275F6006C6EE1 /* Preview Content */,
+			);
+			path = "SanaWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CE5D484527D275F6006C6EE1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D484627D275F6006C6EE1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE5D485127D275F6006C6EE1 /* SanaWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D485227D275F6006C6EE1 /* SanaWatchTests.swift */,
+			);
+			path = SanaWatchTests;
+			sourceTree = "<group>";
+		};
+		CE5D485B27D275F7006C6EE1 /* SanaWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D485C27D275F7006C6EE1 /* SanaWatchUITests.swift */,
+				CE5D485E27D275F7006C6EE1 /* SanaWatchUITestsLaunchTests.swift */,
+			);
+			path = SanaWatchUITests;
+			sourceTree = "<group>";
+		};
+		CE61EA6B2803661700C591E8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CE61EA8C2803722700C591E8 /* AppDelegate.swift */,
+				CE5D482127D27240006C6EE1 /* AppState.swift */,
+				CE5D481F27D27223006C6EE1 /* DI */,
+				CE61EA86280370DF00C591E8 /* Extension */,
+				CE61EA6C2803661E00C591E8 /* Navigation */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CE61EA6C2803661E00C591E8 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				CE61EA6E280366C500C591E8 /* Coordinator.swift */,
+				CE61EA6D280366C400C591E8 /* Router.swift */,
+				CE61EA70280366C500C591E8 /* ViewController.swift */,
+				CE757E242813CB4200E14E75 /* RestrictedHostingController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		CE61EA752803679100C591E8 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				CEF60719282199650010A6F9 /* Analytics */,
+				CE61EA7F28036FB400C591E8 /* Auth */,
+				CEF60716282198EB0010A6F9 /* Home */,
+				CE61EA762803679900C591E8 /* Root */,
+				CEF6071A2821996A0010A6F9 /* Services */,
+				CEF6071B2821996E0010A6F9 /* Settings */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		CE61EA762803679900C591E8 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				CE5D47F127D23414006C6EE1 /* ContentView.swift */,
+				CE5D47EF27D23414006C6EE1 /* SanaApp.swift */,
+				CE61EA77280367A900C591E8 /* AppCoordinator.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		CE61EA7F28036FB400C591E8 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CEFA6141280430A800319C7A /* AuthCoordinator.swift */,
+				CE8D250D280F3C4E0010852F /* CreatePassword */,
+				CE757E262813CC6200E14E75 /* FirstTable */,
+				CEF5807B280C82F800817F05 /* OTP */,
+				CEE34F0E281307CF003B1D66 /* PushNotifications */,
+				CEFA614428043B7800319C7A /* SignIn */,
+				CE61EA802803703C00C591E8 /* SignUp */,
+				CEFA614328043B4700319C7A /* Welcome */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		CE61EA802803703C00C591E8 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				CE48A68127EF41A400EE255E /* SignUpScreen.swift */,
+				CE61EA812803705300C591E8 /* SignUpViewController.swift */,
+				CED006C82818694300DA7C58 /* SignUpInteractor.swift */,
+				CED006CA28186F0F00DA7C58 /* SignUpPresenter.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		CE61EA86280370DF00C591E8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE61EA87280370F000C591E8 /* Add+ViewController.swift */,
+				CE62786D28098E1B00EABC3E /* Keyboard+Extension.swift */,
+				CEFBA483280DDAB900E0A680 /* Array+safe.swift */,
+				CE1F7DEB28240D770074BB1E /* Double+Price.swift */,
+				9A758844F67BEDF02DB4B1BA /* Date+Formatted.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CE757E262813CC6200E14E75 /* FirstTable */ = {
+			isa = PBXGroup;
+			children = (
+				CE757E272813CC7800E14E75 /* FirstTableViewController.swift */,
+				CE757E292813CC8200E14E75 /* FirstTableScreen.swift */,
+				CE1F7DE52823D4C70074BB1E /* FirstTableInteractor.swift */,
+				CE1F7DE72823D4CF0074BB1E /* FirstTablePresenter.swift */,
+			);
+			path = FirstTable;
+			sourceTree = "<group>";
+		};
+		CE8D250D280F3C4E0010852F /* CreatePassword */ = {
+			isa = PBXGroup;
+			children = (
+				CE8D250E280F3C640010852F /* CreatePasswordScreen.swift */,
+				CE8D2518280F4BF10010852F /* CreatePasswordViewController.swift */,
+				CE3BAB082819DCE700814AEC /* CreatePasswordInteractor.swift */,
+				CE3BAB0A2819DCF100814AEC /* CreatePasswordPresenter.swift */,
+			);
+			path = CreatePassword;
+			sourceTree = "<group>";
+		};
+		CE8D2513280F3F9A0010852F /* KeyboardListeningViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE8D2514280F3FB00010852F /* KeyboardListeningViewModel.swift */,
+			);
+			path = KeyboardListeningViewModel;
+			sourceTree = "<group>";
+		};
+		CEA181EB27E7D0390043FE37 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CED006CF28187D1600DA7C58 /* Message */,
+				CE8D2513280F3F9A0010852F /* KeyboardListeningViewModel */,
+				CE38331527EB8AF60083AEF8 /* TextFields */,
+				CEA181EE27E7D1290043FE37 /* Buttons */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CEA181EE27E7D1290043FE37 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				CEA181EC27E7D0590043FE37 /* NormalButton.swift */,
+				CEA181F127E7D5DF0043FE37 /* SecondaryButton.swift */,
+				CEA181F327E7D6460043FE37 /* DisabledButton.swift */,
+				CEA181F527E7D6890043FE37 /* ActiveButton.swift */,
+				CE38331327EB5DBD0083AEF8 /* SecondaryActiveButton.swift */,
+				CE8D2516280F41830010852F /* ConditionalNormalButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		CEADCE222822AE520060047A /* AddAccount */ = {
+			isa = PBXGroup;
+			children = (
+				CEADCE232822AE600060047A /* AddAccountPresenter.swift */,
+				CEADCE252822AE6A0060047A /* AddAccountIteractor.swift */,
+				CEADCE272822B3450060047A /* AddAccountScreen.swift */,
+				CEADCE292822B35B0060047A /* AddAccountViewController.swift */,
+			);
+			path = AddAccount;
+			sourceTree = "<group>";
+		};
+		CEADCE2B2822E0410060047A /* AccountDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CEADCE2C2822E0550060047A /* AccountDetailsInteractor.swift */,
+				CEADCE2E2822E05F0060047A /* AccountDetailsPresenter.swift */,
+				CEADCE302822E0770060047A /* AccountDetailsViewController.swift */,
+				CEADCE322822E08E0060047A /* AccountDetailsScreen.swift */,
+			);
+			path = AccountDetails;
+			sourceTree = "<group>";
+		};
+		CEADCE352822E2630060047A /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				CEADCE362822E2710060047A /* AddTransaction */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		CEADCE362822E2710060047A /* AddTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				CEADCE372822E2810060047A /* AddTransactionCoordinator.swift */,
+				CEADCE392822E2B30060047A /* AddTransaction */,
+				CE1F7DF0282468240074BB1E /* SelectCategory */,
+			);
+			path = AddTransaction;
+			sourceTree = "<group>";
+		};
+		CEADCE392822E2B30060047A /* AddTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				CEADCE3A2822E2C60060047A /* AddTransactionPresenter.swift */,
+				CEADCE3C2822E2CE0060047A /* AddTransactionInteractor.swift */,
+				CEADCE3E2822E2DA0060047A /* AddTransactionViewController.swift */,
+				CEADCE402822E2EB0060047A /* AddTransactionScreen.swift */,
+			);
+			path = AddTransaction;
+			sourceTree = "<group>";
+		};
+		CED006C0281864A400DA7C58 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				CE1F7DD22823B01A0074BB1E /* Home */,
+				CED006C32818672300DA7C58 /* Auth */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		CED006C32818672300DA7C58 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CED006C42818675600DA7C58 /* RegisterRequest.swift */,
+				CE3BAB042819CF5700814AEC /* VerifyOTPRequest.swift */,
+				CE3BAB0C2819DD0600814AEC /* CreatePasswordRequest.swift */,
+				CE57A493281B241F001CA54D /* LoginRequest.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		CED006CF28187D1600DA7C58 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				CED006D028187D2800DA7C58 /* MessageView.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		CEE34F0E281307CF003B1D66 /* PushNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				CEE34F0F281307E5003B1D66 /* PushNotificationsViewController.swift */,
+				CEE34F1328130811003B1D66 /* PushNotificationsScreen.swift */,
+			);
+			path = PushNotifications;
+			sourceTree = "<group>";
+		};
+		CEF5807B280C82F800817F05 /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				CEF5807C280C830A00817F05 /* OTPScreen.swift */,
+				CEF5807E280C831500817F05 /* OTPViewController.swift */,
+				CE3BAB022819CEDB00814AEC /* OTPInteractor.swift */,
+				CE3BAB062819D28400814AEC /* OTPPresenter.swift */,
+			);
+			path = OTP;
+			sourceTree = "<group>";
+		};
+		CEF60716282198EB0010A6F9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CEADCE352822E2630060047A /* Flows */,
+				CEF60717282198FE0010A6F9 /* HomeCoordinator.swift */,
+				CEADCE2B2822E0410060047A /* AccountDetails */,
+				CEADCE222822AE520060047A /* AddAccount */,
+				CEF6072F28219DA00010A6F9 /* Components */,
+				CEF6072228219A800010A6F9 /* Home */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CEF60719282199650010A6F9 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				CEF6072028219A140010A6F9 /* AnalyticsCoordinator.swift */,
+				9A758DF55E78B89F813A3D68 /* AnalyticsViewController.swift */,
+				9C89AB762861700100017F43 /* AnalyticsScreen.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		CEF6071A2821996A0010A6F9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CEF6071C282199D40010A6F9 /* ServicesCoordinator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CEF6071B2821996E0010A6F9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CEF6071E282199F20010A6F9 /* SettingsCoordinator.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CEF6072228219A800010A6F9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE1F7DEF28241F340074BB1E /* View */,
+				CEF6072728219CBD0010A6F9 /* HomeInteractor.swift */,
+				CEF6072928219CC20010A6F9 /* HomePresenter.swift */,
+				CEF6072B28219D490010A6F9 /* HomeViewController.swift */,
+				CEF6072D28219D630010A6F9 /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CEF6072F28219DA00010A6F9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CEF6073228219EEA0010A6F9 /* HomeNavigationBar.swift */,
+				CE1F7DE9282405F30074BB1E /* AnimationModifier.swift */,
+				CE1F7DED282414690074BB1E /* TransactionCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CEF9302F27ED11B6003EFCB8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CEF9303027ED11B6003EFCB8 /* Networking.h */,
+				CEF9304A27ED124A003EFCB8 /* Core */,
+				CEF9304927ED1244003EFCB8 /* Extensions */,
+				CED006C0281864A400DA7C58 /* Requests */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CEF9303B27ED11B6003EFCB8 /* NetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEF9303C27ED11B6003EFCB8 /* NetworkingTests.swift */,
+			);
+			path = NetworkingTests;
+			sourceTree = "<group>";
+		};
+		CEF9304927ED1244003EFCB8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEF9304B27ED125A003EFCB8 /* CustomStringConvertable.swift */,
+				CED006C62818681E00DA7C58 /* Encodable+Dictionary.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEF9304A27ED124A003EFCB8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CEF9305627ED1B0D003EFCB8 /* Request.swift */,
+				CEF9305827ED1C3D003EFCB8 /* NetworkDispatcher.swift */,
+				CEF9305A27ED1C62003EFCB8 /* NetworkRequestError.swift */,
+				CEF9305C27ED1D02003EFCB8 /* ApiClient.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CEFA614328043B4700319C7A /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				CEF9305F27ED96BE003EFCB8 /* WelcomeScreen.swift */,
+				CEFA614528043B9500319C7A /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		CEFA614428043B7800319C7A /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				CE48A67D27EF35BC00EE255E /* SignInScreen.swift */,
+				CE62786B2809856E00EABC3E /* SignInViewController.swift */,
+				CE57A495281B24D9001CA54D /* SignInInteractor.swift */,
+				CE57A497281B24E2001CA54D /* SignInPresenter.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CEF9302927ED11B6003EFCB8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF9303E27ED11B6003EFCB8 /* Networking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CE5D47EB27D23414006C6EE1 /* Sana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5D481027D23416006C6EE1 /* Build configuration list for PBXNativeTarget "Sana" */;
+			buildPhases = (
+				CE5D47E827D23414006C6EE1 /* Sources */,
+				CE5D47E927D23414006C6EE1 /* Frameworks */,
+				CE5D47EA27D23414006C6EE1 /* Resources */,
+				CE5D486A27D275F7006C6EE1 /* Embed Watch Content */,
+				CEF9302527ED1122003EFCB8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE5D486127D275F7006C6EE1 /* PBXTargetDependency */,
+				CEF9304027ED11B6003EFCB8 /* PBXTargetDependency */,
+			);
+			name = Sana;
+			packageProductDependencies = (
+				CE61EA7B28036BD800C591E8 /* Swinject */,
+				CE61EA84280370CB00C591E8 /* SnapKit */,
+				CEF58081280C89D400817F05 /* Introspect */,
+				CED006CD28187C9300DA7C58 /* SwiftMessages */,
+				9C5277C428616F14008FF827 /* SwiftUICharts */,
+			);
+			productName = Sana;
+			productReference = CE5D47EC27D23414006C6EE1 /* Sana.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE5D47FB27D23416006C6EE1 /* SanaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5D481327D23416006C6EE1 /* Build configuration list for PBXNativeTarget "SanaTests" */;
+			buildPhases = (
+				CE5D47F827D23416006C6EE1 /* Sources */,
+				CE5D47F927D23416006C6EE1 /* Frameworks */,
+				CE5D47FA27D23416006C6EE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE5D47FE27D23416006C6EE1 /* PBXTargetDependency */,
+			);
+			name = SanaTests;
+			productName = SanaTests;
+			productReference = CE5D47FC27D23416006C6EE1 /* SanaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE5D480527D23416006C6EE1 /* SanaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5D481627D23416006C6EE1 /* Build configuration list for PBXNativeTarget "SanaUITests" */;
+			buildPhases = (
+				CE5D480227D23416006C6EE1 /* Sources */,
+				CE5D480327D23416006C6EE1 /* Frameworks */,
+				CE5D480427D23416006C6EE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE5D480827D23416006C6EE1 /* PBXTargetDependency */,
+			);
+			name = SanaUITests;
+			productName = SanaUITests;
+			productReference = CE5D480627D23416006C6EE1 /* SanaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CE5D482B27D275F1006C6EE1 /* SanaWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5D486727D275F7006C6EE1 /* Build configuration list for PBXNativeTarget "SanaWatch" */;
+			buildPhases = (
+				CE5D482A27D275F1006C6EE1 /* Resources */,
+				CE5D486627D275F7006C6EE1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE5D483727D275F5006C6EE1 /* PBXTargetDependency */,
+			);
+			name = SanaWatch;
+			productName = SanaWatch;
+			productReference = CE5D482C27D275F1006C6EE1 /* SanaWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CE5D483327D275F5006C6EE1 /* SanaWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5D486327D275F7006C6EE1 /* Build configuration list for PBXNativeTarget "SanaWatch WatchKit Extension" */;
+			buildPhases = (
+				CE5D483027D275F5006C6EE1 /* Sources */,
+				CE5D483127D275F5006C6EE1 /* Frameworks */,
+				CE5D483227D275F5006C6EE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SanaWatch WatchKit Extension";
+			productName = "SanaWatch WatchKit Extension";
+			productReference = CE5D483427D275F5006C6EE1 /* SanaWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		CE5D484D27D275F6006C6EE1 /* SanaWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5D486B27D275F7006C6EE1 /* Build configuration list for PBXNativeTarget "SanaWatchTests" */;
+			buildPhases = (
+				CE5D484A27D275F6006C6EE1 /* Sources */,
+				CE5D484B27D275F6006C6EE1 /* Frameworks */,
+				CE5D484C27D275F6006C6EE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE5D485027D275F6006C6EE1 /* PBXTargetDependency */,
+			);
+			name = SanaWatchTests;
+			productName = SanaWatchTests;
+			productReference = CE5D484E27D275F6006C6EE1 /* SanaWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE5D485727D275F7006C6EE1 /* SanaWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5D486E27D275F7006C6EE1 /* Build configuration list for PBXNativeTarget "SanaWatchUITests" */;
+			buildPhases = (
+				CE5D485427D275F7006C6EE1 /* Sources */,
+				CE5D485527D275F7006C6EE1 /* Frameworks */,
+				CE5D485627D275F7006C6EE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE5D485A27D275F7006C6EE1 /* PBXTargetDependency */,
+			);
+			name = SanaWatchUITests;
+			productName = SanaWatchUITests;
+			productReference = CE5D485827D275F7006C6EE1 /* SanaWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CEF9302D27ED11B6003EFCB8 /* Networking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF9304327ED11B6003EFCB8 /* Build configuration list for PBXNativeTarget "Networking" */;
+			buildPhases = (
+				CEF9302927ED11B6003EFCB8 /* Headers */,
+				CEF9302A27ED11B6003EFCB8 /* Sources */,
+				CEF9302B27ED11B6003EFCB8 /* Frameworks */,
+				CEF9302C27ED11B6003EFCB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Networking;
+			productName = Networking;
+			productReference = CEF9302E27ED11B6003EFCB8 /* Networking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CEF9303427ED11B6003EFCB8 /* NetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF9304627ED11B6003EFCB8 /* Build configuration list for PBXNativeTarget "NetworkingTests" */;
+			buildPhases = (
+				CEF9303127ED11B6003EFCB8 /* Sources */,
+				CEF9303227ED11B6003EFCB8 /* Frameworks */,
+				CEF9303327ED11B6003EFCB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEF9303827ED11B6003EFCB8 /* PBXTargetDependency */,
+				CEF9303A27ED11B6003EFCB8 /* PBXTargetDependency */,
+			);
+			name = NetworkingTests;
+			productName = NetworkingTests;
+			productReference = CEF9303527ED11B6003EFCB8 /* NetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE5D47E427D23414006C6EE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					CE5D47EB27D23414006C6EE1 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					CE5D47FB27D23416006C6EE1 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = CE5D47EB27D23414006C6EE1;
+					};
+					CE5D480527D23416006C6EE1 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = CE5D47EB27D23414006C6EE1;
+					};
+					CE5D482B27D275F1006C6EE1 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					CE5D483327D275F5006C6EE1 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					CE5D484D27D275F6006C6EE1 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = CE5D483327D275F5006C6EE1;
+					};
+					CE5D485727D275F7006C6EE1 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = CE5D482B27D275F1006C6EE1;
+					};
+					CEF9302D27ED11B6003EFCB8 = {
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
+					};
+					CEF9303427ED11B6003EFCB8 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = CE5D47EB27D23414006C6EE1;
+					};
+				};
+			};
+			buildConfigurationList = CE5D47E727D23414006C6EE1 /* Build configuration list for PBXProject "Sana" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE5D47E327D23414006C6EE1;
+			packageReferences = (
+				CE61EA7A28036BD800C591E8 /* XCRemoteSwiftPackageReference "Swinject" */,
+				CE61EA83280370CB00C591E8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CEF58080280C89D400817F05 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				CED006CC28187C9300DA7C58 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+				9C5277C328616F14008FF827 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
+			productRefGroup = CE5D47ED27D23414006C6EE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE5D47EB27D23414006C6EE1 /* Sana */,
+				CE5D47FB27D23416006C6EE1 /* SanaTests */,
+				CE5D480527D23416006C6EE1 /* SanaUITests */,
+				CE5D482B27D275F1006C6EE1 /* SanaWatch */,
+				CE5D483327D275F5006C6EE1 /* SanaWatch WatchKit Extension */,
+				CE5D484D27D275F6006C6EE1 /* SanaWatchTests */,
+				CE5D485727D275F7006C6EE1 /* SanaWatchUITests */,
+				CEF9302D27ED11B6003EFCB8 /* Networking */,
+				CEF9303427ED11B6003EFCB8 /* NetworkingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE5D47EA27D23414006C6EE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE82959027E2298000A56979 /* Colors.xcassets in Resources */,
+				CE5D47F727D23416006C6EE1 /* Preview Assets.xcassets in Resources */,
+				CE5D47F427D23416006C6EE1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D47FA27D23416006C6EE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D480427D23416006C6EE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D482A27D275F1006C6EE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5D482F27D275F4006C6EE1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D483227D275F5006C6EE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5D484727D275F6006C6EE1 /* Preview Assets.xcassets in Resources */,
+				CE5D484427D275F6006C6EE1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D484C27D275F6006C6EE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D485627D275F7006C6EE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF9302C27ED11B6003EFCB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF9303327ED11B6003EFCB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE5D47E827D23414006C6EE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE38331427EB5DBD0083AEF8 /* SecondaryActiveButton.swift in Sources */,
+				CEA181F627E7D6890043FE37 /* ActiveButton.swift in Sources */,
+				9C25B7DA286049FD00EF4C54 /* PersistantFacade.swift in Sources */,
+				CE8D2515280F3FB00010852F /* KeyboardListeningViewModel.swift in Sources */,
+				CEADCE2F2822E05F0060047A /* AccountDetailsPresenter.swift in Sources */,
+				CEA181F227E7D5DF0043FE37 /* SecondaryButton.swift in Sources */,
+				CE1F7DEC28240D770074BB1E /* Double+Price.swift in Sources */,
+				CE48A68227EF41A400EE255E /* SignUpScreen.swift in Sources */,
+				CEADCE412822E2EB0060047A /* AddTransactionScreen.swift in Sources */,
+				CEE34F1428130811003B1D66 /* PushNotificationsScreen.swift in Sources */,
+				CEF9306027ED96BE003EFCB8 /* WelcomeScreen.swift in Sources */,
+				CEADCE312822E0770060047A /* AccountDetailsViewController.swift in Sources */,
+				CEF60718282198FE0010A6F9 /* HomeCoordinator.swift in Sources */,
+				CEA181F027E7D3380043FE37 /* Colors.swift in Sources */,
+				CE3BAB032819CEDB00814AEC /* OTPInteractor.swift in Sources */,
+				CEFA614628043B9500319C7A /* WelcomeViewController.swift in Sources */,
+				CEADCE262822AE6A0060047A /* AddAccountIteractor.swift in Sources */,
+				CE5D482427D27240006C6EE1 /* AppState.swift in Sources */,
+				CEF6072128219A140010A6F9 /* AnalyticsCoordinator.swift in Sources */,
+				CE8D2517280F41830010852F /* ConditionalNormalButton.swift in Sources */,
+				CEADCE282822B3450060047A /* AddAccountScreen.swift in Sources */,
+				CE61EA72280366C500C591E8 /* Coordinator.swift in Sources */,
+				CEF6071D282199D40010A6F9 /* ServicesCoordinator.swift in Sources */,
+				CE1F7DEE282414690074BB1E /* TransactionCell.swift in Sources */,
+				CEF5807D280C830A00817F05 /* OTPScreen.swift in Sources */,
+				CED006D128187D2800DA7C58 /* MessageView.swift in Sources */,
+				CE5D47F227D23414006C6EE1 /* ContentView.swift in Sources */,
+				CEF6072C28219D490010A6F9 /* HomeViewController.swift in Sources */,
+				CEADCE382822E2810060047A /* AddTransactionCoordinator.swift in Sources */,
+				CEF5807F280C831500817F05 /* OTPViewController.swift in Sources */,
+				CE61EA74280366C500C591E8 /* ViewController.swift in Sources */,
+				CE61EA88280370F000C591E8 /* Add+ViewController.swift in Sources */,
+				CE8D2512280F3D960010852F /* PasswordTextField.swift in Sources */,
+				CE57A496281B24D9001CA54D /* SignInInteractor.swift in Sources */,
+				9C89AB772861700100017F43 /* AnalyticsScreen.swift in Sources */,
+				CED006CB28186F0F00DA7C58 /* SignUpPresenter.swift in Sources */,
+				CE3BAB092819DCE700814AEC /* CreatePasswordInteractor.swift in Sources */,
+				CEA181ED27E7D0590043FE37 /* NormalButton.swift in Sources */,
+				CEF6072828219CBD0010A6F9 /* HomeInteractor.swift in Sources */,
+				9C6911B3285F71E700A842C2 /* Model.xcdatamodeld in Sources */,
+				CE1F7DE82823D4CF0074BB1E /* FirstTablePresenter.swift in Sources */,
+				CE3BAB0B2819DCF100814AEC /* CreatePasswordPresenter.swift in Sources */,
+				CE61EA78280367A900C591E8 /* AppCoordinator.swift in Sources */,
+				CE8D2519280F4BF10010852F /* CreatePasswordViewController.swift in Sources */,
+				CE1F7DF2282468510074BB1E /* SelectCategoryScreen.swift in Sources */,
+				CE1F7DF42824685F0074BB1E /* SelectCategoryViewController.swift in Sources */,
+				CE8D250F280F3C640010852F /* CreatePasswordScreen.swift in Sources */,
+				CE61EA7E28036BF700C591E8 /* DIContainer.swift in Sources */,
+				CEF6072A28219CC20010A6F9 /* HomePresenter.swift in Sources */,
+				CE3BAB072819D28400814AEC /* OTPPresenter.swift in Sources */,
+				CE61EA71280366C500C591E8 /* Router.swift in Sources */,
+				CE62786E28098E1B00EABC3E /* Keyboard+Extension.swift in Sources */,
+				CE5D47F027D23414006C6EE1 /* SanaApp.swift in Sources */,
+				CE757E282813CC7800E14E75 /* FirstTableViewController.swift in Sources */,
+				CEE34F10281307E5003B1D66 /* PushNotificationsViewController.swift in Sources */,
+				CE61EA822803705300C591E8 /* SignUpViewController.swift in Sources */,
+				CE1F7DE62823D4C70074BB1E /* FirstTableInteractor.swift in Sources */,
+				CEADCE3F2822E2DA0060047A /* AddTransactionViewController.swift in Sources */,
+				CE62786C2809856E00EABC3E /* SignInViewController.swift in Sources */,
+				CE82959227E22D8800A56979 /* Fonts.swift in Sources */,
+				CE48A67E27EF35BC00EE255E /* SignInScreen.swift in Sources */,
+				CEADCE242822AE600060047A /* AddAccountPresenter.swift in Sources */,
+				CEF6071F282199F20010A6F9 /* SettingsCoordinator.swift in Sources */,
+				CE57A498281B24E2001CA54D /* SignInPresenter.swift in Sources */,
+				CEF6072E28219D630010A6F9 /* HomeScreen.swift in Sources */,
+				CEFBA484280DDAB900E0A680 /* Array+safe.swift in Sources */,
+				CE1F7DEA282405F30074BB1E /* AnimationModifier.swift in Sources */,
+				CE757E2A2813CC8200E14E75 /* FirstTableScreen.swift in Sources */,
+				CE5D481E27D271A8006C6EE1 /* Assets.swift in Sources */,
+				CEADCE332822E08E0060047A /* AccountDetailsScreen.swift in Sources */,
+				CEF6073328219EEA0010A6F9 /* HomeNavigationBar.swift in Sources */,
+				CEADCE3D2822E2CE0060047A /* AddTransactionInteractor.swift in Sources */,
+				CEADCE3B2822E2C60060047A /* AddTransactionPresenter.swift in Sources */,
+				CEA181F427E7D6460043FE37 /* DisabledButton.swift in Sources */,
+				CE38331927EB8E860083AEF8 /* SanaTextField.swift in Sources */,
+				CEFA6142280430A800319C7A /* AuthCoordinator.swift in Sources */,
+				CED006C92818694300DA7C58 /* SignUpInteractor.swift in Sources */,
+				CEADCE2D2822E0550060047A /* AccountDetailsInteractor.swift in Sources */,
+				CE61EA8D2803722700C591E8 /* AppDelegate.swift in Sources */,
+				CEADCE2A2822B35B0060047A /* AddAccountViewController.swift in Sources */,
+				CE757E252813CB4200E14E75 /* RestrictedHostingController.swift in Sources */,
+				9A7587261D015CA6824E7AED /* Date+Formatted.swift in Sources */,
+				9A75841B6567FE6AF9B19DC7 /* GetTableUseCase.swift in Sources */,
+				9A75875C8B1C8D3ABD09F21D /* SelectCategoryInteractor.swift in Sources */,
+				9A7585DBF79CEC2A8040C13D /* SelectCategoryPresenter.swift in Sources */,
+				9A758EDB6AE5E0226F71281D /* AnalyticsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D47F827D23416006C6EE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5D480127D23416006C6EE1 /* SanaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D480227D23416006C6EE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5D480B27D23416006C6EE1 /* SanaUITests.swift in Sources */,
+				CE5D480D27D23416006C6EE1 /* SanaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D483027D275F5006C6EE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5D483E27D275F5006C6EE1 /* NotificationController.swift in Sources */,
+				CE5D483C27D275F5006C6EE1 /* ContentView.swift in Sources */,
+				CE5D484227D275F5006C6EE1 /* ComplicationController.swift in Sources */,
+				CE5D483A27D275F5006C6EE1 /* SanaApp.swift in Sources */,
+				CE5D484027D275F5006C6EE1 /* NotificationView.swift in Sources */,
+				9C6911B4285F71E700A842C2 /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D484A27D275F6006C6EE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5D485327D275F6006C6EE1 /* SanaWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5D485427D275F7006C6EE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5D485D27D275F7006C6EE1 /* SanaWatchUITests.swift in Sources */,
+				CE5D485F27D275F7006C6EE1 /* SanaWatchUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF9302A27ED11B6003EFCB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF9305727ED1B0D003EFCB8 /* Request.swift in Sources */,
+				CE1F7DD82823B7320074BB1E /* GetTableByIdRequest.swift in Sources */,
+				CEF9305927ED1C3D003EFCB8 /* NetworkDispatcher.swift in Sources */,
+				CE1F7DE42823D1A00074BB1E /* PostTransactionRequest.swift in Sources */,
+				CE3BAB052819CF5700814AEC /* VerifyOTPRequest.swift in Sources */,
+				CE1F7DDE2823CEF00074BB1E /* GetCategoriesRequest.swift in Sources */,
+				CE1F7DE02823D02F0074BB1E /* PostCategoryRequest.swift in Sources */,
+				CE57A494281B241F001CA54D /* LoginRequest.swift in Sources */,
+				CE3BAB0D2819DD0600814AEC /* CreatePasswordRequest.swift in Sources */,
+				CE1F7DDA2823BB240074BB1E /* GetAccountsRequest.swift in Sources */,
+				CE1F7DE22823D1120074BB1E /* GetTransactionRequest.swift in Sources */,
+				CED006C52818675600DA7C58 /* RegisterRequest.swift in Sources */,
+				CEF9304C27ED125A003EFCB8 /* CustomStringConvertable.swift in Sources */,
+				CEF9305B27ED1C62003EFCB8 /* NetworkRequestError.swift in Sources */,
+				CE1F7DDC2823CE370074BB1E /* PostAccountRequest.swift in Sources */,
+				CE1F7DD62823B37B0074BB1E /* PostTableRequest.swift in Sources */,
+				CED006C72818681E00DA7C58 /* Encodable+Dictionary.swift in Sources */,
+				CE1F7DD42823B0300074BB1E /* GetTablesRequest.swift in Sources */,
+				CEF9305D27ED1D02003EFCB8 /* ApiClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF9303127ED11B6003EFCB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF9303D27ED11B6003EFCB8 /* NetworkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE5D47FE27D23416006C6EE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE5D47EB27D23414006C6EE1 /* Sana */;
+			targetProxy = CE5D47FD27D23416006C6EE1 /* PBXContainerItemProxy */;
+		};
+		CE5D480827D23416006C6EE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE5D47EB27D23414006C6EE1 /* Sana */;
+			targetProxy = CE5D480727D23416006C6EE1 /* PBXContainerItemProxy */;
+		};
+		CE5D483727D275F5006C6EE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE5D483327D275F5006C6EE1 /* SanaWatch WatchKit Extension */;
+			targetProxy = CE5D483627D275F5006C6EE1 /* PBXContainerItemProxy */;
+		};
+		CE5D485027D275F6006C6EE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE5D483327D275F5006C6EE1 /* SanaWatch WatchKit Extension */;
+			targetProxy = CE5D484F27D275F6006C6EE1 /* PBXContainerItemProxy */;
+		};
+		CE5D485A27D275F7006C6EE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE5D482B27D275F1006C6EE1 /* SanaWatch */;
+			targetProxy = CE5D485927D275F7006C6EE1 /* PBXContainerItemProxy */;
+		};
+		CE5D486127D275F7006C6EE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE5D482B27D275F1006C6EE1 /* SanaWatch */;
+			targetProxy = CE5D486027D275F7006C6EE1 /* PBXContainerItemProxy */;
+		};
+		CEF9303827ED11B6003EFCB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEF9302D27ED11B6003EFCB8 /* Networking */;
+			targetProxy = CEF9303727ED11B6003EFCB8 /* PBXContainerItemProxy */;
+		};
+		CEF9303A27ED11B6003EFCB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE5D47EB27D23414006C6EE1 /* Sana */;
+			targetProxy = CEF9303927ED11B6003EFCB8 /* PBXContainerItemProxy */;
+		};
+		CEF9304027ED11B6003EFCB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEF9302D27ED11B6003EFCB8 /* Networking */;
+			targetProxy = CEF9303F27ED11B6003EFCB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE5D480E27D23416006C6EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE5D480F27D23416006C6EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE5D481127D23416006C6EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sana/Preview Content\"";
+				DEVELOPMENT_TEAM = J78N6PTC3Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sana/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.Sana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE5D481227D23416006C6EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sana/Preview Content\"";
+				DEVELOPMENT_TEAM = J78N6PTC3Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sana/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.Sana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE5D481427D23416006C6EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.SanaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sana.app/Sana";
+			};
+			name = Debug;
+		};
+		CE5D481527D23416006C6EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.SanaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sana.app/Sana";
+			};
+			name = Release;
+		};
+		CE5D481727D23416006C6EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.SanaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sana;
+			};
+			name = Debug;
+		};
+		CE5D481827D23416006C6EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.SanaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sana;
+			};
+			name = Release;
+		};
+		CE5D486427D275F7006C6EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SanaWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = J78N6PTC3Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SanaWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SanaWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.Sana.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		CE5D486527D275F7006C6EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SanaWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = J78N6PTC3Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SanaWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SanaWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.Sana.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		CE5D486827D275F7006C6EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J78N6PTC3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = SanaWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = SanaWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.emirali.team.Sana;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.Sana.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		CE5D486927D275F7006C6EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J78N6PTC3Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = SanaWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = SanaWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.emirali.team.Sana;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.Sana.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		CE5D486C27D275F7006C6EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.Sana.SanaWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanaWatch WatchKit Extension.appex/SanaWatch WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		CE5D486D27D275F7006C6EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.Sana.SanaWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanaWatch WatchKit Extension.appex/SanaWatch WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		CE5D486F27D275F7006C6EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.Sana.SanaWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = SanaWatch;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		CE5D487027D275F7006C6EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.Sana.SanaWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = SanaWatch;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		CEF9304427ED11B6003EFCB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.Networking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CEF9304527ED11B6003EFCB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.Networking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CEF9304727ED11B6003EFCB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.NetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sana.app/Sana";
+			};
+			name = Debug;
+		};
+		CEF9304827ED11B6003EFCB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirali.team.NetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sana.app/Sana";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE5D47E727D23414006C6EE1 /* Build configuration list for PBXProject "Sana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5D480E27D23416006C6EE1 /* Debug */,
+				CE5D480F27D23416006C6EE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5D481027D23416006C6EE1 /* Build configuration list for PBXNativeTarget "Sana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5D481127D23416006C6EE1 /* Debug */,
+				CE5D481227D23416006C6EE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5D481327D23416006C6EE1 /* Build configuration list for PBXNativeTarget "SanaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5D481427D23416006C6EE1 /* Debug */,
+				CE5D481527D23416006C6EE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5D481627D23416006C6EE1 /* Build configuration list for PBXNativeTarget "SanaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5D481727D23416006C6EE1 /* Debug */,
+				CE5D481827D23416006C6EE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5D486327D275F7006C6EE1 /* Build configuration list for PBXNativeTarget "SanaWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5D486427D275F7006C6EE1 /* Debug */,
+				CE5D486527D275F7006C6EE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5D486727D275F7006C6EE1 /* Build configuration list for PBXNativeTarget "SanaWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5D486827D275F7006C6EE1 /* Debug */,
+				CE5D486927D275F7006C6EE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5D486B27D275F7006C6EE1 /* Build configuration list for PBXNativeTarget "SanaWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5D486C27D275F7006C6EE1 /* Debug */,
+				CE5D486D27D275F7006C6EE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5D486E27D275F7006C6EE1 /* Build configuration list for PBXNativeTarget "SanaWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5D486F27D275F7006C6EE1 /* Debug */,
+				CE5D487027D275F7006C6EE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF9304327ED11B6003EFCB8 /* Build configuration list for PBXNativeTarget "Networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF9304427ED11B6003EFCB8 /* Debug */,
+				CEF9304527ED11B6003EFCB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF9304627ED11B6003EFCB8 /* Build configuration list for PBXNativeTarget "NetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF9304727ED11B6003EFCB8 /* Debug */,
+				CEF9304827ED11B6003EFCB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9C5277C328616F14008FF827 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		CE61EA7A28036BD800C591E8 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		CE61EA83280370CB00C591E8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		CED006CC28187C9300DA7C58 /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		CEF58080280C89D400817F05 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9C5277C428616F14008FF827 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C5277C328616F14008FF827 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		CE61EA7B28036BD800C591E8 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE61EA7A28036BD800C591E8 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		CE61EA84280370CB00C591E8 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE61EA83280370CB00C591E8 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		CED006CD28187C9300DA7C58 /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CED006CC28187C9300DA7C58 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
+		};
+		CEF58081280C89D400817F05 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEF58080280C89D400817F05 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		9C6911B1285F71E700A842C2 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9C6911B2285F71E700A842C2 /* Model.xcdatamodel */,
+			);
+			currentVersion = 9C6911B2285F71E700A842C2 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE5D47E427D23414006C6EE1 /* Project object */;
+}

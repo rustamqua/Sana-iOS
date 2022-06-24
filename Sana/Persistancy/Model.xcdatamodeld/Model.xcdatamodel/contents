@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Account" representedClassName="Account" syncable="YES" codeGenerationType="class">
+        <attribute name="balance" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="bankType" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <attribute name="type" attributeType="String" defaultValueString=""/>
+        <relationship name="table" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FinancialTable" inverseName="accounts" inverseEntity="FinancialTable"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="account" inverseEntity="Transaction"/>
+    </entity>
+    <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
+        <attribute name="imageName" attributeType="String" defaultValueString=""/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <attribute name="type" attributeType="String" defaultValueString=""/>
+    </entity>
+    <entity name="FinancialTable" representedClassName="FinancialTable" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <attribute name="netWorth" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="accounts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Account" inverseName="table" inverseEntity="Account"/>
+    </entity>
+    <entity name="Transaction" representedClassName="Transaction" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="category" attributeType="String" defaultValueString=""/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="image" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="merchant" attributeType="String" defaultValueString=""/>
+        <attribute name="type" attributeType="String" defaultValueString=""/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="transactions" inverseEntity="Account"/>
+    </entity>
+    <elements>
+        <element name="Account" positionX="-54" positionY="9" width="128" height="119"/>
+        <element name="FinancialTable" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="Transaction" positionX="-45" positionY="18" width="128" height="134"/>
+        <element name="Category" positionX="-54" positionY="72" width="128" height="74"/>
+    </elements>
+</model>

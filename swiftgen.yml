@@ -1,0 +1,7 @@
+xcassets:
+  inputs:
+    - Sana/Resources/Assets.xcassets
+    - Sana/Resources/Colors.xcassets
+  outputs:
+    - templateName: swift5
+      output: Sana/Generated/Assets.swift
